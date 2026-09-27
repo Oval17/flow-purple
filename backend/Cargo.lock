@@ -8660,6 +8660,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "opentelemetry"
+version = "0.33.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6cdb0b1b267eb9db3331b434ed9ddab10d50e280a9adf9d13e5233e2002b61b5"
+dependencies = [
+ "futures-core",
+ "futures-sink",
+ "js-sys",
+ "pin-project-lite",
+ "thiserror 2.0.20",
+ "tracing",
+]
+
+[[package]]
 name = "opentelemetry-appender-tracing"
 version = "0.30.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -8811,6 +8825,22 @@ dependencies = [
  "percent-encoding",
  "rand 0.9.0",
  "serde_json",
+ "thiserror 2.0.20",
+]
+
+[[package]]
+name = "opentelemetry_sdk"
+version = "0.33.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cb39533d9d1c912123efd7d41d7e0c29d16917b60ce15b4c8d87cb1af7f67520"
+dependencies = [
+ "futures-channel",
+ "futures-executor",
+ "futures-util",
+ "opentelemetry 0.33.0",
+ "percent-encoding",
+ "portable-atomic",
+ "rand 0.9.0",
  "thiserror 2.0.20",
  "tokio",
  "tokio-stream",
@@ -14814,7 +14844,7 @@ dependencies = [
  "lazy_static",
  "once_cell",
  "opentelemetry 0.30.0",
- "opentelemetry_sdk 0.30.0",
+ "opentelemetry_sdk 0.33.0",
  "prometheus",
  "rand 0.9.0",
  "rdkafka",
@@ -15647,7 +15677,7 @@ dependencies = [
  "opentelemetry-appender-tracing",
  "opentelemetry-otlp 0.30.0",
  "opentelemetry-semantic-conventions 0.30.0",
- "opentelemetry_sdk 0.30.0",
+ "opentelemetry_sdk 0.33.0",
  "pep440_rs",
  "phf 0.11.3",
  "pin-project-lite",
